@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
 import { styles } from "../styles";
-import { EarthCanvas } from "./canvas";
+// import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
@@ -70,7 +70,7 @@ const Contact = () => {
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
+        className='flex-1 bg-black-100 p-8 rounded-2xl'
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
@@ -125,9 +125,51 @@ const Contact = () => {
 
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
-        className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
+        className='xl:flex-2 xl:h-auto '
       >
-        <EarthCanvas />
+        {/* <EarthCanvas /> */}
+        <div className="mt-5 flex sm:flex-col gap-10 flex-row">
+            <a
+              className="py-2 mr-7 "
+              href="https://www.linkedin.com/in/basavraj-dhamanage-493920262/"
+            >
+              <svg
+                class="h-10 w-10 text-red-500"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#915eff"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                {" "}
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />{" "}
+                <rect x="2" y="9" width="4" height="12" />{" "}
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </a>
+            <a
+              className="py-2 mr-7"
+              href="https://www.instagram.com/_basav.raj_/"
+            >
+              <svg class="h-10  w-10 text-red-500"  viewBox="0 0 24 24"  fill="none"  stroke="#915eff"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" /></svg>
+              
+            </a>
+            <a
+              className="py-2 mr-7"
+              href="https://github.com/BasavrajD"
+            >
+              <svg class="h-10  w-10 text-red-500"  viewBox="0 0 24 24"  fill="none"  stroke="#915eff"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" /></svg>
+              
+            </a>
+            <a
+              className="py-2 mr-7"
+              href="https://dribbble.com/BasavrajD"
+            >
+              <svg class="h-10 w-10 text-red-500"  viewBox="0 0 24 24"  fill="none"  stroke="#915eff"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <circle cx="12" cy="12" r="10" />  <path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32" /></svg>
+              
+            </a>
+          </div>
       </motion.div>
     </div>
   );
